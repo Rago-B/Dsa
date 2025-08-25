@@ -1,0 +1,13 @@
+import array 
+# 3 4 332
+
+arr=array.array('i',[3,4,332,21,1344,322])
+
+for i in range(len(arr)-1):
+    if (arr[i]<arr[i+1]):#  332 21
+        arr[i]=arr[i]
+        arr[i+1]=arr[i+1]
+    else:
+        arr[i],arr[i+1]=arr[i+1],arr[i]
+print(arr)
+
