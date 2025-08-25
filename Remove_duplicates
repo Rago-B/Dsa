@@ -1,0 +1,12 @@
+import array 
+arr=array.array('i',[23,76,1,2,1,2,43,23,76])
+new_arr=[]
+
+
+for i in arr:
+    
+    if i not in new_arr :
+        
+        new_arr.append(i)
+        
+print(sorted(new_arr))
