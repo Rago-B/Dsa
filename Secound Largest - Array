@@ -1,0 +1,9 @@
+import array
+
+arr=array.array('i',[1,33,4,2,44,3])
+
+for i in range(0,len(arr)-1):
+    if arr[i]>arr[i+1]:
+        arr[i],arr[i+1]=arr[i+1],arr[i]
+
+print(arr)
