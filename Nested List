@@ -1,0 +1,13 @@
+pythonstudents = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]] 
+
+scores=[i[1] for i in pythonstudents]
+
+sorted_score=sorted(scores)
+
+sec_lowest=sorted_score[1]
+
+names=[name for name,score in pythonstudents if score == sec_lowest]
+
+print(names)
+
+
