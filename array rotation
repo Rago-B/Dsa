@@ -1,0 +1,10 @@
+import array
+arr=[1,2,3,4,5]
+roteted_arr = [0] * len(arr)  # Pre-fill with 0s
+for i in range(len(arr)):
+    pos=(i+2)%len(arr)
+    roteted_arr[pos]=arr[i]
+    
+print(roteted_arr)
+
+
