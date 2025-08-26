@@ -1,0 +1,10 @@
+number=371 #12
+final_result=0
+
+while number>0:
+    last_number=number%10 #2
+    result=last_number**3    #125
+    final_result=final_result+result #125
+    number=number//10 #12
+print(final_result)
+    
