@@ -1,0 +1,10 @@
+words = ["apple", "banana", "apple", "orange", "banana", "apple"]
+dic={}
+for i in words:#apple
+    if i in dic:
+        dic[i]+=1
+    else:
+        dic[i]=1 # dic[apple]=0
+        
+for i,j in dic.items():
+    print(f"{j} times {i}")
