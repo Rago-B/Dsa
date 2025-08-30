@@ -1,0 +1,24 @@
+word_one="silent"
+word_two="listen"
+leng=len(word_one)
+count=0
+
+
+word_one_dic={}
+word_one_two={}
+
+for i in word_one:
+    if i not in word_one_dic:
+        word_one_dic[i]=1
+    else:
+        word_one_dic[i] +=1
+
+for i in word_two:
+    if i not in word_one_two:
+        word_one_two[i]=1
+    else:
+        word_one_two[i] +=1
+
+if word_one_dic==word_one_two:
+    print("anagram")
+    
