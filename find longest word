@@ -1,0 +1,13 @@
+word="hi iam rago iam currently learning dsa"
+
+w=word.split(" ")
+
+longest=w[0]
+
+for i in range (1,len(w)): # 
+    if len(longest)<len(w[i]): # hi iam 
+        longest=w[i]
+        
+print(longest)
+print(w)
+        
