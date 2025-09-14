@@ -1,0 +1,7 @@
+list_=[1,3,55,3,2,2,24,44]
+l=[]
+
+for i in range(len(list_)-1,-1,-1): #7 #6
+    l.append(list_[i])
+    
+print(l)
